@@ -11,6 +11,7 @@ RUN apt-get -y update --fix-missing && \
     apt-get --no-install-recommends install -y apt-utils && \
     rm -rf /var/lib/apt/lists/*
 
+RUN apt-get install git -y
 
 # Install useful tools and install important libaries
 RUN apt-get -y update && \
@@ -99,11 +100,6 @@ RUN a2enmod ssl && a2enmod rewrite
 
 # Enable apache modules
 RUN a2enmod rewrite headers
-
-#enable site
-RUN cd /etc/apache2/sites-available
-RUN a2ensite backend.conf
-RUN service apache2 reload
 
 # Cleanup
 RUN rm -rf /usr/src/*
