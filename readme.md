@@ -1,5 +1,5 @@
 Step 1
-
+Copy the .env.sample to .env (create the .env file)
 Download backend project inside www folder (run the following command in a terminal in this directory)
 
 cd www && git clone https://github.com/Abhaya47/Major_backend.git
