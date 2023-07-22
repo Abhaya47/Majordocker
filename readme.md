@@ -12,6 +12,6 @@ Step 3:
 
 ssh inside the lamp-php8 server and run the following commands
 
-cd  /var/www/major-backend
+cd  /var/www/major_backend
 composer install
 ./init.sh
